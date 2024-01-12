@@ -15,7 +15,13 @@ try {
     }
 
     // Voer de query uit om de waarde "xyz" op te halen
-    $query = "SELECT CurrentLuchtTemperatuur FROM product ORDER BY Tijd DESC LIMIT 1;";
+    $query = "SELECT AVG(CurrentLuchtTemperatuur) AS GemiddeldeLuchtTemperatuur
+    FROM (
+        SELECT CurrentLuchtTemperatuur
+        FROM product
+        ORDER BY Tijd DESC
+        LIMIT 5
+    ) AS subquery;";
     $result = $conn->query($query);
 
     // Controleer op queryfouten
