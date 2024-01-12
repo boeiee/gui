@@ -28,8 +28,8 @@ try {
         // Haal de rij op
         $row = $result->fetch_assoc();
 
-        // Waarde "xyz" afdrukken
-        echo $row['CurrentLuchtTemperatuur'];
+        // Gebruik de juiste alias "GemiddeldeLuchtTemperatuur" om de waarde op te halen
+        echo $row['GemiddeldeLuchtTemperatuur'];
     } else {
         echo "Geen resultaten gevonden voor 'xyz' in de 'product' tabel.";
     }
