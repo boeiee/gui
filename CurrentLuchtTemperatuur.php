@@ -15,7 +15,7 @@ try {
     }
 
     // Voer de query uit om de waarde "xyz" op te halen
-    $query = "SELECT CurrentLuchtTemperatuur FROM product LIMIT 1 ORDER BY Tijd ASC";
+    $query = "SELECT CurrentLuchtTemperatuur FROM product ORDER BY Tijd ASC LIMIT 1;";
     $result = $conn->query($query);
 
     // Controleer op queryfouten
