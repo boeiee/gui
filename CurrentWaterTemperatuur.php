@@ -15,7 +15,7 @@ try {
     }
 
     // Voer de query uit om de waarde "xyz" op te halen
-    $query = "SELECT AVG(CurrentTemperatuur) AS WaterTemp FROM (SELECT CurrentTemperatuure FROM product ORDER BY Tijd DESC LIMIT 30 ) AS subquery;";
+    $query = "SELECT AVG(CurrentTemperatuur) AS WaterTemp FROM (SELECT CurrentTemperatuur FROM product ORDER BY Tijd DESC LIMIT 30 ) AS subquery;";
     $result = $conn->query($query);
 
     // Controleer op queryfouten
