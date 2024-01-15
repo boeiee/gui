@@ -555,10 +555,10 @@ $(function() {
         },
         colors: colorPalette,
         series: [{
-            name: 'Clothing',
+            name: 'Boei 1',
             data: [42, 52, 16, 55, 59, 51, 45, 32, 26, 33, 44, 51, 42, 56],
         }, {
-            name: 'Food Products',
+            name: 'Boei 2',
             data: [6, 12, 4, 7, 5, 3, 6, 4, 3, 3, 5, 6, 7, 4],
         }],
         labels: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
@@ -617,7 +617,7 @@ $(function() {
         colors: colorPalette,
 
         series: [21, 23, 19, 14, 6],
-        labels: ['Clothing', 'Food Products', 'Electronics', 'Kitchen Utility', 'Gardening'],
+        labels: ['Boei 1', 'Boei 2', 'Electronics', 'Kitchen Utility', 'Gardening'],
         legend: {
             position: 'left',
             offsetY: 80

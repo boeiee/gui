@@ -103,10 +103,10 @@ $(function() {
         },
         colors: colorPalette,
         series: [{
-            name: 'Clothing',
+            name: 'Boei 1',
             data: [42, 52, 16, 55, 51, 45, 20, 10],
         }, {
-            name: 'Food Products',
+            name: 'Boei 2',
             data: [10, 14, 25, 16, 9, 20, 80, 40],
         }],
         labels: [10, 11, 12, 13, 15, 16],
