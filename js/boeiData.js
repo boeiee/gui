@@ -1,35 +1,27 @@
-function fetchAllDataAndDisplay() {
-    // Haal de luchttemperatuur op
-    fetch("https://boeiee.nl/CurrentLuchtTemperatuur.php")
+function fetchDataAndDisplay() {
+    // Haal de PPM op
+    fetch("https://boeiee.nl/CurrentPPM.php")
         .then(response => response.text())
-        .then(luchtTemperatuur => {
-            // Haal de PPM op
-            fetch("https://boeiee.nl/CurrentPPM.php")
+        .then(ppm => {
+            // Haal de watertemperatuur op
+            fetch("https://boeiee.nl/CurrentWaterTemperatuur.php")
                 .then(response => response.text())
-                .then(ppm => {
-                    // Haal de watertemperatuur op
-                    fetch("https://boeiee.nl/CurrentWaterTemperatuur.php")
-                        .then(response => response.text())
-                        .then(waterTemperatuur => {
-                            // Vermenigvuldig de gegevens
-                            const result = parseFloat(luchtTemperatuur) * parseFloat(ppm) * parseFloat(waterTemperatuur);
+                .then(waterTemperatuur => {
+                    // Vermenigvuldig de gegevens
+                    const result = parseFloat(ppm) * parseFloat(waterTemperatuur);
 
-                            // Rond het KwaliteitsIndex af tot één cijfer achter de komma
-                            const roundedResult = result.toFixed(1);
+                    // Rond het resultaat af tot één cijfer achter de komma
+                    const roundedResult = result.toFixed(1);
 
-                            // Update de inhoud van de H5-tag met het ID "KwaliteitsIndex"
-                            document.getElementById("KwaliteitsIndex").innerText = roundedResult;
-                        })
-                        .catch(error => {
-                            console.error("Fout bij het ophalen van watertemperatuur:", error);
-                        });
+                    // Update de inhoud van de H5-tag met het ID "Resultaat"
+                    document.getElementById("Resultaat").innerText = "Resultaat: " + roundedResult;
                 })
                 .catch(error => {
-                    console.error("Fout bij het ophalen van PPM:", error);
+                    console.error("Fout bij het ophalen van watertemperatuur:", error);
                 });
         })
         .catch(error => {
-            console.error("Fout bij het ophalen van luchttemperatuur:", error);
+            console.error("Fout bij het ophalen van PPM:", error);
         });
 }
 
