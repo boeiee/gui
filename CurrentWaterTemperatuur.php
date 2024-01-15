@@ -28,8 +28,8 @@ try {
         // Haal de rij op
         $row = $result->fetch_assoc();
 
-        // Gebruik de juiste alias "CurrentTemperatuur" om de waarde op te halen
-        echo $row['CurrentTemperatuur'];
+        // Gebruik de juiste alias "WaterTemp" om de waarde op te halen
+        echo $row['WaterTemp'];
     } else {
         echo "Geen resultaten gevonden voor 'xyz' in de 'product' tabel.";
     }
