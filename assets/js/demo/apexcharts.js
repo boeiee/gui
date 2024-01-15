@@ -202,7 +202,7 @@ $(function() {
     /* Line, Column & Area */
     let option4 = {
         series: [{
-            name: 'Sales',
+            name: 'Boei 2',
             type: 'column',
             data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
         }, {
@@ -210,7 +210,7 @@ $(function() {
             type: 'area',
             data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
         }, {
-            name: 'Profit',
+            name: 'Boei 1',
             type: 'line',
             data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
         }],

@@ -165,10 +165,10 @@ $(function() {
                 label: 'eCommerce Sales'
             }],
             labels: [
-                'Apple',
-                'Samsung',
-                'Vivo',
-                'Oppo',
+                'Boei 1',
+                'Boei 2',
+                'Boei 3',
+                'Boei 4',
 
             ]
         },
