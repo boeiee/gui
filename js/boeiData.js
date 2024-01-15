@@ -64,6 +64,6 @@ CurrentWaterTemperatuur();
 fetchDataAndDisplay();
 
 // Stel een interval in om CurrentLuchtTemperatuur elke 30 seconden uit te voeren
-setInterval(CurrentLuchtTemperatuur, 30000);
-setInterval(CurrentWaterTemperatuur, 30000);
-setInterval(fetchDataAndDisplay, 30000);
+setInterval(CurrentLuchtTemperatuur, 2000);
+setInterval(CurrentWaterTemperatuur, 2000);
+setInterval(fetchDataAndDisplay, 2000);
