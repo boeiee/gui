@@ -61,9 +61,9 @@ function CurrentWaterTemperatuur() {
 // Voer CurrentLuchtTemperatuur uit bij het laden van de pagina
 CurrentLuchtTemperatuur();
 CurrentWaterTemperatuur();
-fetchAllDataAndDisplay();
+fetchDataAndDisplay();
 
 // Stel een interval in om CurrentLuchtTemperatuur elke 30 seconden uit te voeren
 setInterval(CurrentLuchtTemperatuur, 30000);
 setInterval(CurrentWaterTemperatuur, 30000);
-setInterval(fetchAllDataAndDisplay, 30000);
+setInterval(fetchDataAndDisplay, 30000);
