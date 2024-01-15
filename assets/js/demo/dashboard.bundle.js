@@ -42,10 +42,10 @@ $(function() {
     /* Line, Column & Area */
     let option4 = {
         series: [{
-            name: 'Profit',
+            name: 'Boei 1',
             data: [31, 40, 28, 51, 42, 109, 100]
         }, {
-            name: 'Sales',
+            name: 'Boei 2',
             data: [11, 32, 45, 32, 34, 52, 41]
         }],
         chart: {
