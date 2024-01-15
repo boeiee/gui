@@ -33,11 +33,6 @@ function fetchAllDataAndDisplay() {
         });
 }
 
-// Voer fetchDataAndDisplay uit bij het laden van de pagina
-fetchDataAndDisplay();
-
-// Stel een interval in om fetchDataAndDisplay elke 30 seconden uit te voeren
-setInterval(fetchDataAndDisplay, 30000);
 
 function CurrentLuchtTemperatuur() {
     // https-verzoek naar de API-endpoint
