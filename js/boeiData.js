@@ -1,14 +1,14 @@
 function fetchAllDataAndDisplay() {
     // Haal de luchttemperatuur op
-    fetch("http://boeiee.nl/CurrentLuchtTemperatuur.php")
+    fetch("https://boeiee.nl/CurrentLuchtTemperatuur.php")
         .then(response => response.text())
         .then(luchtTemperatuur => {
             // Haal de PPM op
-            fetch("http://boeiee.nl/CurrentPPM.php")
+            fetch("https://boeiee.nl/CurrentPPM.php")
                 .then(response => response.text())
                 .then(ppm => {
                     // Haal de watertemperatuur op
-                    fetch("http://boeiee.nl/CurrentWaterTemperatuur.php")
+                    fetch("https://boeiee.nl/CurrentWaterTemperatuur.php")
                         .then(response => response.text())
                         .then(waterTemperatuur => {
                             // Vermenigvuldig de gegevens
@@ -40,8 +40,8 @@ fetchDataAndDisplay();
 setInterval(fetchDataAndDisplay, 30000);
 
 function CurrentLuchtTemperatuur() {
-    // HTTP-verzoek naar de API-endpoint
-    fetch("http://boeiee.nl/CurrentLuchtTemperatuur.php")
+    // https-verzoek naar de API-endpoint
+    fetch("https://boeiee.nl/CurrentLuchtTemperatuur.php")
         .then(response => response.text())
         .then(data => {
             // Rond het getal af tot één cijfer achter de komma
@@ -56,8 +56,8 @@ function CurrentLuchtTemperatuur() {
 }
 
 function CurrentWaterTemperatuur() {
-    // HTTP-verzoek naar de API-endpoint
-    fetch("http://boeiee.nl/CurrentWaterTemperatuur.php")
+    // https-verzoek naar de API-endpoint
+    fetch("https://boeiee.nl/CurrentWaterTemperatuur.php")
         .then(response => response.text())
         .then(data => {
             // Rond het getal af tot één cijfer achter de komma
