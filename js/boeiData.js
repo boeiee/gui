@@ -10,11 +10,11 @@ function fetchDataAndDisplay() {
                     // Vermenigvuldig de gegevens
                     const result = parseFloat(ppm) * parseFloat(waterTemperatuur);
 
-                    // Rond het resultaat af tot één cijfer achter de komma
+                    // Rond het KwaliteitsIndex af tot één cijfer achter de komma
                     const roundedResult = result.toFixed(1);
 
-                    // Update de inhoud van de H5-tag met het ID "Resultaat"
-                    document.getElementById("Resultaat").innerText = "Resultaat: " + roundedResult;
+                    // Update de inhoud van de H5-tag met het ID "KwaliteitsIndex"
+                    document.getElementById("KwaliteitsIndex").innerText = roundedResult;
                 })
                 .catch(error => {
                     console.error("Fout bij het ophalen van watertemperatuur:", error);
