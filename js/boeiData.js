@@ -39,9 +39,6 @@ fetchDataAndDisplay();
 // Stel een interval in om fetchDataAndDisplay elke 30 seconden uit te voeren
 setInterval(fetchDataAndDisplay, 30000);
 
-Deze code haalt de gegevens van de drie endpoints op, vermenigvuldigt ze en plaatst het resultaat in een HTML-tag met het ID "Resultaat". Je kunt deze code aanpassen op basis van je specifieke vereisten en HTML-structuur.
-
-
 function CurrentLuchtTemperatuur() {
     // HTTP-verzoek naar de API-endpoint
     fetch("http://boeiee.nl/CurrentLuchtTemperatuur.php")
@@ -77,7 +74,9 @@ function CurrentWaterTemperatuur() {
 // Voer CurrentLuchtTemperatuur uit bij het laden van de pagina
 CurrentLuchtTemperatuur();
 CurrentWaterTemperatuur();
+fetchAllDataAndDisplay();
 
 // Stel een interval in om CurrentLuchtTemperatuur elke 30 seconden uit te voeren
 setInterval(CurrentLuchtTemperatuur, 30000);
 setInterval(CurrentWaterTemperatuur, 30000);
+setInterval(fetchAllDataAndDisplay, 30000);
