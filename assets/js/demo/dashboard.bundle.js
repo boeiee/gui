@@ -19,18 +19,18 @@ $(function() {
         },
         colors: colorPalette,
         series: [{
-            name: 'Sales',
+            name: 'Gegevens',
             data: [15, 60, 40, 91, 10, 0]
         }],
         xaxis: {
             title: {
-                text: 'Year',
+                text: 'Tijd',
             },
-            categories: [2015, 2016, 2017, 2018, 2019, 2020]
+            categories: [1, 2, 3, 4, 5, 6]
         },
         yaxis: {
             title: {
-                text: 'Sales Count',
+                text: 'Gegevens',
             },
         }
 
